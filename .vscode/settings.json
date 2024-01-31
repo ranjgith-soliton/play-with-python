@@ -1,0 +1,14 @@
+{
+  "python.testing.pytestEnabled": true,
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": ["--line-length", "120"],
+  "python.formatting.autopep8Args": ["--max-line-length=120"],
+  "python.sortImports.args": ["--force-sort-within-sections"],
+  "[python]": {
+    "editor.rulers": [120],
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  }
+}
