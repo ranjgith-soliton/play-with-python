@@ -42,4 +42,3 @@ class CoffeeMachineUIBase(ABC):
     def display_ready_message(menu_item_name: str):
         """Displays a ready message to the user interface."""
         pass
-

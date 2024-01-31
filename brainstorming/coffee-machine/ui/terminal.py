@@ -40,4 +40,3 @@ class CoffeeMachineTerminalUI(CoffeeMachineUIBase):
     def display_ready_message(menu_item_name: str):
         """Displays a ready message to the user interface."""
         print(f"Your {menu_item_name} is ready!")
-

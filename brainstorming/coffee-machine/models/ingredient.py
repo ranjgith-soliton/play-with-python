@@ -11,6 +11,7 @@ class Ingredient(str, Enum):
     def __str__(self) -> str:
         return str.__str__(self)
 
+
 @dataclass
 class IngredientQuantity:
     ingredient: Ingredient

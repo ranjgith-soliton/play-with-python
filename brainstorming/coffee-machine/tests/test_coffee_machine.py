@@ -4,8 +4,8 @@ import pytest
 
 # Basic test
 
-class TestCoffeeMachine:
 
+class TestCoffeeMachine:
     def test_coffee_machine_init(self):
         coffee_machine = CoffeeMachine()
         assert coffee_machine is not None

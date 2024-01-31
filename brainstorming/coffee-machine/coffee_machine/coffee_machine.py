@@ -1,9 +1,10 @@
 from typing import List
 from coffee_machine.container import Container
 from constants.containers import AVAILABLE_CONTAINERS
-from constants.menu_items import  AVAILABLE_MENU_ITEMS, MenuItem
+from constants.menu_items import AVAILABLE_MENU_ITEMS, MenuItem
 from ui.terminal import CoffeeMachineTerminalUI
 from ui.ui_base import CoffeeMachineUIBase
+
 
 class CoffeeMachine:
     """Represents a coffee machine."""
@@ -97,7 +98,9 @@ class CoffeeMachine:
         for ingredient_quantity in menu_item.recipe:
             for container in self.containers:
                 if ingredient_quantity.ingredient.name == container.ingredient.name:
-                    self.ui.display_ingredient_dispensing(ingredient_quantity.ingredient.name)
+                    self.ui.display_ingredient_dispensing(
+                        ingredient_quantity.ingredient.name
+                    )
                     self.ui.display_message_and_sleep(
                         "", ingredient_quantity.quantity * 0.01
                     )
